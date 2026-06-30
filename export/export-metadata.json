@@ -1,0 +1,64 @@
+{
+    "exportDate": "2023-08-01T15:27:31+0000",
+    "customMetadata": {
+        "arlibraryAssetIds": {
+            "facebook": {
+                "texture": [
+                    "458164124900353"
+                ]
+            }
+        }
+    },
+    "creatorPlatform": "macosx",
+    "editorVersion": {
+        "build": "497039590",
+        "version": "168.0.0.25.141",
+        "environment": "Release",
+        "codename": "Skylight"
+    },
+    "projectFormatType": "single_file",
+    "files": {
+        "pvr": "house_yellow_barn_upd@pvr.arfx",
+        "etc": "house_yellow_barn_upd@etc.arfx",
+        "basic": "house_yellow_barn_upd@uncompressed.arfx",
+        "project": "house_yellow_barn_upd.arprojpkg"
+    },
+    "projectFileVersion": {
+        "patch": 0,
+        "major": 168,
+        "prod": 168,
+        "mode": "prod",
+        "minor": 0,
+        "dev": 0
+    },
+    "targetingPlatforms": [
+        "facebook",
+        "instagram"
+    ],
+    "creatorIdentifier": "com.facebook.arstudio.skylight",
+    "capabilities": [
+        "variadicMath",
+        "previewCaptureOutput",
+        "visualShaders",
+        "imageBasedLighting",
+        "shaderCode",
+        "renderPasses",
+        "pinchGestures",
+        "visualShadersSdf",
+        "javaScriptScripting",
+        "deviceMotion",
+        "tapGestures",
+        "panGestures",
+        "touchGestures",
+        "blocks",
+        "pbrMaterial",
+        "worldTracker",
+        "longPressGestures",
+        "rotateGestures",
+        "composedMaterial",
+        "instruction",
+        "componentEvaluation"
+    ],
+    "exportUnixTimestamp": 1690903651,
+    "projectName": "house_yellow_barn_upd"
+}

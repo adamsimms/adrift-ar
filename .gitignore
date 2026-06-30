@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Spark AR / Meta Spark
+*.tmp
+*.bak
+.spark/
+Library/
+
+# Archives and intermediate exports
+*.arprojpkg
+*@pvr.arfx
+*@etc.arfx
+*@uncompressed.arfx
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*~
