@@ -1,5 +1,8 @@
 blank_issues_enabled: true
 contact_links:
+  - name: Code of Conduct
+    url: https://github.com/adamsimms/adrift-ar/blob/main/CODE_OF_CONDUCT.md
+    about: Community standards and how to report unacceptable behavior
   - name: Contributing guide
     url: https://github.com/adamsimms/adrift-ar/blob/main/CONTRIBUTING.md
     about: How to clone, edit, and submit changes

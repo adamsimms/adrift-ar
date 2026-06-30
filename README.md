@@ -28,6 +28,7 @@ No Git LFS? Download the export from [Releases](https://github.com/adamsimms/adr
 | Document | Purpose |
 |----------|---------|
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Setup, workflow, PR checklist |
+| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Community standards |
 | [SECURITY.md](SECURITY.md) | Report security issues responsibly |
 | [source/README.md](source/README.md) | Spark AR source project guide |
 | [LICENSE](LICENSE) | CC BY-NC 4.0 terms |

@@ -4,6 +4,9 @@ Thank you for your interest in this project. Adrift is an art piece and AR filte
 might include bug fixes, documentation, asset optimization, or technical improvements to the Spark AR
 project.
 
+Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md). We are committed to a welcoming,
+respectful community.
+
 ## Quick start
 
 ```bash
