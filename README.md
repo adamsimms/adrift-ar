@@ -47,7 +47,8 @@ Learn more at [adamsim.ms](https://adamsim.ms).
 │       ├── facebook.svg         # QR code for Facebook
 │       └── instagram.svg        # QR code for Instagram
 └── source/
-    └── README.md                # How to edit and re-export the effect
+    ├── house_yellow_barn_upd/   # Editable Spark AR project (.arproj)
+    └── README.md                # How to open, edit, and re-export
 ```
 
 ## Spark AR compatibility
@@ -80,13 +81,21 @@ current platform requirements.
 
 ## Development
 
+### Edit the source project
+
 1. Install [Meta Spark Studio](https://spark.meta.com/).
-2. Import `export/adrift.arexport`.
+2. Open `source/house_yellow_barn_upd/house_yellow_barn_upd.arproj`.
 3. Make changes and export a new `.arexport` bundle.
 4. Replace `export/adrift.arexport` and refresh `export/export-metadata.json`.
 5. If the published effect URL changes, regenerate the QR codes in `assets/qr/`.
 
 See [source/README.md](source/README.md) for more detail.
+
+### Download without cloning
+
+A ready-to-import `.arexport` bundle is attached to
+[GitHub Releases](https://github.com/adamsimms/adrift-ar/releases) — useful if you
+do not want to clone the repo or use Git LFS.
 
 ## License
 

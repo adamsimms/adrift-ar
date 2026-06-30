@@ -21,6 +21,7 @@ jobs:
           test -f assets/icon-adrift.png
           test -f assets/qr/facebook.svg
           test -f assets/qr/instagram.svg
+          test -f source/house_yellow_barn_upd/house_yellow_barn_upd.arproj
 
       - name: Warn on large tracked files
         run: |

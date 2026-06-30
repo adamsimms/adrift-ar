@@ -1,25 +1,46 @@
 # Source project
 
-This repository stores the published Spark AR export bundle, not a separate editable
-`.arproj` directory.
+The editable Spark AR project is extracted at `source/house_yellow_barn_upd/`.
 
-## What is included
+## Contents
 
-The export archive at `export/adrift.arexport` contains:
+| Path | Description |
+|------|-------------|
+| `house_yellow_barn_upd.arproj` | Main Spark AR project file |
+| `objects/` | 3D assets (house, anchor) |
+| `blocks/` | Reusable Spark AR blocks (ripple, instructions, animation) |
+| `patches/` | Patch assets |
+| `scripts/` | JavaScript (e.g. license attribution) |
+| `shaders/` | Custom shaders |
 
-- `house_yellow_barn_upd.arprojpkg` — packaged Spark AR project
-- Platform-specific effect binaries (`.arfx`)
-- `export.json` — export metadata (copied to `export/export-metadata.json`)
+This was extracted from `export/adrift.arexport` (exported 2023-08-01, Spark Studio v168).
 
-## Editing the effect
+## Open in Meta Spark Studio
 
-To modify the filter:
+1. Install [Meta Spark Studio](https://spark.meta.com/).
+2. **File → Open** and select:
 
-1. Import `export/adrift.arexport` into Meta Spark Studio (formerly Spark AR Studio).
-2. Edit the project in Spark Studio.
-3. Re-export a new `.arexport` bundle and replace `export/adrift.arexport`.
-4. Update `export/export-metadata.json` from the new export if metadata changed.
-5. Regenerate QR codes if the published effect ID changes.
+   ```
+   source/house_yellow_barn_upd/house_yellow_barn_upd.arproj
+   ```
 
-Re-export is only required when changing the effect itself. Reorganizing files in
-this repository does not affect whether an existing export loads in Spark Studio.
+3. Edit the scene, materials, or interaction.
+4. **File → Export** to create a new `.arexport` bundle.
+5. Replace `export/adrift.arexport` and refresh `export/export-metadata.json`.
+6. Regenerate QR codes in `assets/qr/` if the published effect ID changes.
+
+You can also import the pre-built bundle directly without opening the source project:
+
+```
+export/adrift.arexport
+```
+
+## Alternative: download the export
+
+A packaged `.arexport` is attached to [GitHub Releases](https://github.com/adamsimms/adrift-ar/releases)
+for use without cloning the repository or Git LFS.
+
+## When to re-export
+
+Re-export is only required when changing the effect itself. Moving or reorganizing files
+in this repository does not affect whether an existing project loads in Spark Studio.
