@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Contributing guide
+    url: https://github.com/adamsimms/adrift-ar/blob/main/CONTRIBUTING.md
+    about: How to clone, edit, and submit changes
+  - name: Artist website
+    url: https://adamsim.ms
+    about: Learn more about Adam Simms and Adrift
