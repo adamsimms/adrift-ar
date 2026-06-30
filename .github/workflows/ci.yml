@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check required files exist
+        run: |
+          test -f README.md
+          test -f LICENSE
+          test -f export/adrift.arexport
+          test -f export/export-metadata.json
+          test -f assets/preview.png
+          test -f assets/icon-adrift.png
+          test -f assets/qr/facebook.svg
+          test -f assets/qr/instagram.svg
+          test -f source/house_yellow_barn_upd/house_yellow_barn_upd.arproj
+
+      - name: Warn on large tracked files
+        run: |
+          find . -type f \
+            ! -path './.git/*' \
+            -size +2M \
+            -exec echo "::warning file={}::File exceeds 2 MB; consider Git LFS or further optimization." \;
+
+      - name: Validate export metadata JSON
+        run: python3 -m json.tool export/export-metadata.json > /dev/null
+
+      - name: Check README links
+        run: |
+          grep -oE 'https?://[^)]+' README.md | while read -r url; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" -L --max-time 15 "$url" || echo "000")
+            if [ "$code" -ge 400 ] || [ "$code" = "000" ]; then
+              echo "::warning::README link returned HTTP $code: $url"
+            fi
+          done
