@@ -1,0 +1,25 @@
+name: Documentation or repo issue
+description: Report a problem with README, contributing docs, or repository setup
+title: "docs: "
+labels:
+  - documentation
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear or incorrect?
+      description: Describe the documentation issue
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Where did you see it?
+      placeholder: e.g. README.md, CONTRIBUTING.md
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested fix
+      description: Optional — how would you improve it?

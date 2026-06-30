@@ -1,0 +1,40 @@
+name: AR effect issue
+description: Report a problem with the Spark AR project or export bundle
+title: "effect: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Describe the issue with the AR effect or export
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open source/house_yellow_barn_upd/house_yellow_barn_upd.arproj in Meta Spark Studio
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: spark-version
+    attributes:
+      label: Meta Spark Studio version
+    validations:
+      required: false
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform tested
+      options:
+        - Facebook
+        - Instagram
+        - Spark AR Player
+        - Meta Spark Studio preview only
+    validations:
+      required: false

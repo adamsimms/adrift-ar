@@ -15,6 +15,23 @@ Atlantic Ocean, drifting and turning as the viewer moves through the scene.
 Scan a QR code with your phone camera, or open the link on a mobile device with the
 app installed.
 
+## For contributors
+
+Want to edit the effect or improve this repo?
+
+1. Read [CONTRIBUTING.md](CONTRIBUTING.md) — clone with Git LFS, open the project, submit a PR
+2. Open `source/house_yellow_barn_upd/house_yellow_barn_upd.arproj` in [Meta Spark Studio](https://spark.meta.com/)
+3. See [source/README.md](source/README.md) for export and re-publish steps
+
+No Git LFS? Download the export from [Releases](https://github.com/adamsimms/adrift-ar/releases/tag/v1.0.0).
+
+| Document | Purpose |
+|----------|---------|
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Setup, workflow, PR checklist |
+| [SECURITY.md](SECURITY.md) | Report security issues responsibly |
+| [source/README.md](source/README.md) | Spark AR source project guide |
+| [LICENSE](LICENSE) | CC BY-NC 4.0 terms |
+
 ## Artist statement
 
 Adrift elides physical and virtual space while challenging ephemeral notions of home.
@@ -72,8 +89,9 @@ From `export/export-metadata.json`:
 
 - **Project name:** `house_yellow_barn_upd`
 - **Exported:** 2023-08-01
-- **Spark Studio version:** 168.0.0.25 (codename Skylight)
+- **Spark Studio version:** 168.0.0.25.141 (codename Skylight)
 - **Target platforms:** Facebook, Instagram
+- **Latest release:** [v1.0.0](https://github.com/adamsimms/adrift-ar/releases/tag/v1.0.0)
 
 Meta has renamed and evolved Spark AR tooling (now Meta Spark Studio). Older exports
 usually still import, but republishing may require a newer Studio version depending on
@@ -89,7 +107,7 @@ current platform requirements.
 4. Replace `export/adrift.arexport` and refresh `export/export-metadata.json`.
 5. If the published effect URL changes, regenerate the QR codes in `assets/qr/`.
 
-See [source/README.md](source/README.md) for more detail.
+See [source/README.md](source/README.md) and [CONTRIBUTING.md](CONTRIBUTING.md) for full detail.
 
 ### Download without cloning
 
@@ -102,9 +120,11 @@ do not want to clone the repo or use Git LFS.
 This project is licensed under [CC BY-NC 4.0](LICENSE).
 
 The effect's availability on Facebook and Instagram is governed by Meta's platform
-terms.
+terms. Third-party Spark AR blocks and Meta templates may have additional terms — see
+[CONTRIBUTING.md](CONTRIBUTING.md#third-party-assets).
 
 ## Credits
 
 - **Artist:** [Adam Simms](https://adamsim.ms)
 - **References:** Paul Virilio, *The Vision Machine*; Ien Ang, *On Not Speaking Chinese*
+- **Third-party Spark AR assets:** jeetesh_singh_209 (3D Ripple Plane), Meta Spark Studio templates
