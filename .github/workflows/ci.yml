@@ -38,6 +38,11 @@ jobs:
       - name: Validate export metadata JSON
         run: python3 -m json.tool export/export-metadata.json > /dev/null
 
+      - name: Validate SECURITY.md references private reporting
+        run: |
+          grep -q 'security/advisories' SECURITY.md
+          grep -qi 'private vulnerability reporting' SECURITY.md
+
       - name: Check README links
         run: |
           for file in README.md CONTRIBUTING.md CODE_OF_CONDUCT.md SECURITY.md source/README.md; do
