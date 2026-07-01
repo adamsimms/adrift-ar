@@ -12,8 +12,11 @@ If you discover a security issue **in this repository** (for example, a maliciou
 project files, or a compromised release artifact), please report it responsibly:
 
 1. **Do not** open a public GitHub issue for security vulnerabilities
-2. Email the repository owner via the contact listed at [adamsim.ms](https://adamsim.ms)
+2. Use GitHub [private vulnerability reporting](https://github.com/adamsimms/adrift-ar/security/advisories/new) to submit a confidential report
 3. Include a description, affected files or release version, and steps to reproduce
+
+You can also reach the Security tab → **Report a vulnerability** on the repository page. Reports are
+delivered privately to maintainers through GitHub Security Advisories.
 
 We will acknowledge reports within a reasonable timeframe and work on a fix or mitigation.
 

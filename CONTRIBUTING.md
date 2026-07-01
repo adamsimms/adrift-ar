@@ -146,4 +146,8 @@ Ensure the following are set under **Settings → General** on GitHub:
 | License | CC BY-NC 4.0 |
 | Topics | `spark-ar`, `meta-spark`, `augmented-reality`, `ar-filter`, `facebook`, `instagram`, `digital-art` |
 
+Under **Settings → Advanced Security**, enable **Private vulnerability reporting** so security
+researchers can submit confidential reports through GitHub Security Advisories (see
+[SECURITY.md](SECURITY.md)).
+
 GitHub may show **Other** for the license until CC BY-NC 4.0 is selected in the repository settings UI.
