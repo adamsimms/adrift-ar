@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: Adrift AR Filter
+authors:
+  - family-names: Simms
+    given-names: Adam
+    email: hello@adamsimms.xyz
+    website: "https://adamsim.ms"
+version: "1.0.0"
+date-released: "2023-08-01"
+license: CC-BY-NC-4.0
+url: "https://github.com/adamsimms/adrift-ar"
+repository-code: "https://github.com/adamsimms/adrift-ar"
+abstract: >-
+  Augmented reality filter for Facebook and Instagram of a digital
+  Newfoundland house floating on the Atlantic Ocean.
